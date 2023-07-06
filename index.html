@@ -7,11 +7,71 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="bg-violet-700 dark: bg-purple-950 p-2" id="container">
-      <div id="navbar"></div>
+    <!--
+      bg-yellow-400
+      bg-yellow-900
+      bg-blue-70
+      dark:bg-blue-950
+
+      bg-zinc-400
+      bg-zinc-50
+      bg-gray-950
+    -->
+    <div class="bg-blue-700" id="hobby_container">
+      <div
+        class="bg-yellow-400 items-center flex flex-row p-2 max-w-[100%]"
+        id="hobby_navbar"
+      >
+        <div class="md:w-[60%] w-[90%]" id="hobby_logo">
+          <h2 class="flex flex-row text-2xl font-bold">
+            FjS
+            <i
+              class="fa-solid fa-book-open-reader text-2xl"
+              style="color: #000000"
+            ></i
+            >obby
+          </h2>
+        </div>
+        <div class="md:flex hidden w-[40%] justify-between" id="hobby_menu">
+          <a
+            dir="rtl"
+            href="#"
+            class="text-decoration-none text-black md:text-md text-base font-bold hover:text-white ease-in duration-300"
+            >Benefits</a
+          >
+          <a
+            dir="rtl"
+            href="#"
+            class="text-decoration-none text-black md:text-md text-base font-bold hover:text-white ease-in duration-300"
+            >Subscribe</a
+          >
+          <a
+            dir="rtl"
+            href="#"
+            class="text-decoration-none text-black md:text-md text-base font-bold hover:text-white ease-in duration-300"
+            >Learn</a
+          >
+          <a
+            dir="rtl"
+            href="#"
+            class="text-decoration-none text-black md:text-md text-base font-bold hover:text-white ease-in duration-300"
+            >Daily Lecture</a
+          >
+        </div>
+        <div class="md:hidden flex text-end" id="menu_switch">
+          <button class="text-xl" onClick="menu()">
+            <i class="fa-solid fa-glasses" style="color: #000000"></i>
+          </button>
+        </div>
+      </div>
       <div id="header"></div>
       <div id="content"></div>
       <div id="footer"></div>
+      <!--JS-->
+      <script
+        src="https://kit.fontawesome.com/12e117d926.js"
+        crossorigin="anonymous"
+      ></script>
     </div>
   </body>
 </html>
