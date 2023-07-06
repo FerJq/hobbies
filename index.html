@@ -22,15 +22,14 @@
         class="bg-yellow-400 items-center flex flex-row p-2 max-w-[100%]"
         id="hobby_navbar"
       >
-        <div class="md:w-[60%] w-[90%]" id="hobby_logo">
-          <h2 class="flex flex-row text-2xl font-bold">
+        <div
+          class="md:w-[60%] w-[90%] hover:text-white ease-in duration-300"
+          id="hobby_logo"
+        >
+          <a href="#home" class="flex flex-row text-2xl font-bold">
             FjS
-            <i
-              class="fa-solid fa-book-open-reader text-2xl"
-              style="color: #000000"
-            ></i
-            >obby
-          </h2>
+            <i class="fa-solid fa-book-open-reader text-2xl"></i>obby
+          </a>
         </div>
         <div class="md:flex hidden w-[40%] justify-between" id="hobby_menu">
           <a
@@ -58,20 +57,42 @@
             >Daily Lecture</a
           >
         </div>
-        <div class="md:hidden flex text-end" id="menu_switch">
-          <button class="text-xl" onClick="menu()">
-            <i class="fa-solid fa-glasses" style="color: #000000"></i>
+        <div class="md:hidden flex text-end" id="hobby_menu">
+          <button class="text-xl" id="open">
+            <i class="fa-solid fa-glasses"></i>
+          </button>
+          <button class="text-xl hidden" id="closed">
+            <i class="fa-solid fa-x"></i>
           </button>
         </div>
       </div>
       <div id="header"></div>
       <div id="content"></div>
       <div id="footer"></div>
-      <!--JS-->
+      <!--JS Library-->
       <script
         src="https://kit.fontawesome.com/12e117d926.js"
         crossorigin="anonymous"
       ></script>
+      <script>
+        const hobby_navbar = document.getElementById('hobby_navbar');
+        const menu = document.getElementById('menu');
+        const hobby_menu = document.getElementById('hobby_menu');
+        const open_menu = document.getElementById('open');
+        const closed_menu = document.getElementById('closed');
+
+        //Menu Toggle
+        open_menu.addEventListener('click', ToggOpen);
+        function ToggOpen() {
+          open_menu.classList.add('hidden');
+
+          closed_menu.classList.remove('hidden');
+          closed_menu.classList.add('flex');
+
+          hobby_menu.classList.add('block');
+          hobby_menu.classList.remove('hidden', 'md:flex');
+        }
+      </script>
     </div>
   </body>
 </html>
