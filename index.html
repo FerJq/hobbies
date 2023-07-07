@@ -19,51 +19,52 @@
     -->
     <div class="bg-blue-700" id="hobby_container">
       <div
-        class="bg-yellow-400 items-center flex flex-row p-2 max-w-[100%]"
+        class="bg-yellow-400 items-center flex flex-row p-2 max-w-[100%] justify-between"
         id="hobby_navbar"
       >
         <div
-          class="md:w-[60%] w-[90%] hover:text-white ease-in duration-300"
+          class="md:w-[60%] w-[90%] flex flex-row justify-between items-center"
           id="hobby_logo"
         >
-          <a href="#home" class="flex flex-row text-2xl font-bold">
-            FjS
-            <i class="fa-solid fa-book-open-reader text-2xl"></i>obby
-          </a>
+          <div class="hover:text-white ease-in duration-300">
+            <a href="#home" class="flex flex-row text-2xl font-bold">
+              FjS
+              <i class="fa-solid fa-book-open-reader text-2xl"></i>obby
+            </a>
+          </div>
+          <div class="md:hidden flex text-end" id="hobby_menu">
+            <button class="text-xl" id="open">
+              <i class="fa-solid fa-glasses"></i>
+            </button>
+            <button class="text-xl hidden" id="closed">
+              <i class="fa-solid fa-x"></i>
+            </button>
+          </div>
         </div>
-        <div class="md:flex hidden w-[40%] justify-between" id="hobby_menu">
+        <div
+          class="md:flex hidden w-full justify-between"
+          id="hobby_menu_options"
+        >
           <a
-            dir="rtl"
             href="#"
             class="text-decoration-none text-black md:text-md text-base font-bold hover:text-white ease-in duration-300"
             >Benefits</a
           >
           <a
-            dir="rtl"
             href="#"
             class="text-decoration-none text-black md:text-md text-base font-bold hover:text-white ease-in duration-300"
             >Subscribe</a
           >
           <a
-            dir="rtl"
             href="#"
             class="text-decoration-none text-black md:text-md text-base font-bold hover:text-white ease-in duration-300"
             >Learn</a
           >
           <a
-            dir="rtl"
             href="#"
             class="text-decoration-none text-black md:text-md text-base font-bold hover:text-white ease-in duration-300"
             >Daily Lecture</a
           >
-        </div>
-        <div class="md:hidden flex text-end" id="hobby_menu">
-          <button class="text-xl" id="open">
-            <i class="fa-solid fa-glasses"></i>
-          </button>
-          <button class="text-xl hidden" id="closed">
-            <i class="fa-solid fa-x"></i>
-          </button>
         </div>
       </div>
       <div id="header"></div>
@@ -77,20 +78,24 @@
       <script>
         const hobby_navbar = document.getElementById('hobby_navbar');
         const menu = document.getElementById('menu');
-        const hobby_menu = document.getElementById('hobby_menu');
+        const hobby_menu_options =
+          document.getElementById('hobby_menu_options');
         const open_menu = document.getElementById('open');
         const closed_menu = document.getElementById('closed');
 
         //Menu Toggle
         open_menu.addEventListener('click', ToggOpen);
         function ToggOpen() {
+          hobby_navbar.classList.remove('flex', 'flex-row');
+          hobby_navbar.classList.add('block');
+
           open_menu.classList.add('hidden');
 
           closed_menu.classList.remove('hidden');
           closed_menu.classList.add('flex');
 
-          hobby_menu.classList.add('block');
-          hobby_menu.classList.remove('hidden', 'md:flex');
+          hobby_menu_options.classList.add('flex', 'flex-col', 'mt-[10px]');
+          hobby_menu_options.classList.remove('hidden');
         }
       </script>
     </div>
