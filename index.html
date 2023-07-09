@@ -84,8 +84,22 @@
         const closed_menu = document.getElementById('closed');
 
         //Menu Toggle
-        open_menu.addEventListener('click', ToggOpen);
-        function ToggOpen() {
+        open_menu.addEventListener('click', toggOpen);
+        function toggOpen() {
+          hobby_navbar.classList.remove('flex', 'flex-row');
+          hobby_navbar.classList.add('block');
+
+          open_menu.classList.add('hidden');
+
+          closed_menu.classList.remove('hidden');
+          closed_menu.classList.add('flex');
+
+          hobby_menu_options.classList.add('flex', 'flex-col', 'mt-[10px]');
+          hobby_menu_options.classList.remove('hidden');
+        }
+
+        closed_menu.addEventListener('click', toggClose);
+        function toggClose() {
           hobby_navbar.classList.remove('flex', 'flex-row');
           hobby_navbar.classList.add('block');
 
