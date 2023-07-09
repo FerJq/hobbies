@@ -67,9 +67,25 @@
           >
         </div>
       </div>
-      <div id="header"></div>
-      <div id="content"></div>
-      <div id="footer"></div>
+      <div
+        class="sm:p-20 md:p-30 p-40 bg-cover bg-center bg-[url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/939/original/pexels-pixabay-159751.jpg?1688871755')]"
+        id="hobbies-header"
+      >
+        <div class="hover:text-yellow-300 ease-in duration-300">
+          <a
+            href="#home"
+            class="block text-center sm:text-2xl md:text-8xl text-6xl font-bold text-yellow-400 hover:text-yellow-300 ease-in duration-300 animate-bounce drop-shadow-xl"
+          >
+            FjS
+            <i class="fa-solid fa-book-open-reader text-9xl"></i>obby
+          </a>
+          <p class="block text-center text-2xl text-yellow-300 font-bold">
+            One click to view more
+          </p>
+        </div>
+      </div>
+      <div id="hobbies-content"></div>
+      <div id="hobbies-footer"></div>
       <!--JS Library-->
       <script
         src="https://kit.fontawesome.com/12e117d926.js"
@@ -94,7 +110,12 @@
           closed_menu.classList.remove('hidden');
           closed_menu.classList.add('flex');
 
-          hobby_menu_options.classList.add('flex', 'flex-col', 'text-end', 'mt-[10px]');
+          hobby_menu_options.classList.add(
+            'flex',
+            'flex-col',
+            'text-end',
+            'mt-[10px]'
+          );
           hobby_menu_options.classList.remove('hidden');
         }
 
