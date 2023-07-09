@@ -94,22 +94,22 @@
           closed_menu.classList.remove('hidden');
           closed_menu.classList.add('flex');
 
-          hobby_menu_options.classList.add('flex', 'flex-col', 'mt-[10px]');
+          hobby_menu_options.classList.add('flex', 'flex-col', 'text-end', 'mt-[10px]');
           hobby_menu_options.classList.remove('hidden');
         }
 
         closed_menu.addEventListener('click', toggClose);
         function toggClose() {
-          hobby_navbar.classList.remove('flex', 'flex-row');
-          hobby_navbar.classList.add('block');
+          hobby_navbar.classList.add('flex', 'flex-row');
+          hobby_navbar.classList.remove('block');
 
-          open_menu.classList.add('hidden');
+          open_menu.classList.remove('hidden');
 
-          closed_menu.classList.remove('hidden');
-          closed_menu.classList.add('flex');
+          closed_menu.classList.add('hidden');
+          closed_menu.classList.remove('flex');
 
-          hobby_menu_options.classList.add('flex', 'flex-col', 'mt-[10px]');
-          hobby_menu_options.classList.remove('hidden');
+          hobby_menu_options.classList.remove('flex', 'flex-col', 'mt-[10px]');
+          hobby_menu_options.classList.add('hidden');
         }
       </script>
     </div>
