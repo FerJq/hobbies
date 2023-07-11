@@ -87,19 +87,44 @@
         </div>
       </div>
 
-      <div class="text-center">
-        <h1 class="text-yellow-400 font-sans font-bold text-2xl">
+      <div class="text-center mt-[2rem] flex flex-row justify-center">
+        <span class="relative flex h-3 w-3">
+          <span
+            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"
+          ></span>
+          <span
+            class="relative inline-flex rounded-full h-3 w-3 bg-yellow-500"
+          ></span>
+        </span>
+
+        <h1
+          class="text-yellow-400 font-sans font-bold text-3xl mr-[20px] ml-[20px]"
+        >
           READING AS HOBBY
         </h1>
+
+        <span class="relative flex h-3 w-3">
+          <span
+            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"
+          ></span>
+          <span
+            class="relative inline-flex rounded-full h-3 w-3 bg-yellow-500"
+          ></span>
+        </span>
       </div>
 
-      <div class="flex md:flex-row flex-col p-10" id="hobbies-content">
-        <div class="max-w-full">
+      <div
+        class="grid md:max-[1100px]:grid-cols-1 grid-cols-3 p-10 items-center"
+        id="hobbies-content"
+      >
+        <div class="">
           <div>
             <p class="text-white font-mono">
               Reading is a fun hobby because it lets you explore new worlds,
               stimulate your imagination, and teach you about fascinating
-              topics, cultures, and perspectives.
+              topics, cultures, and perspectives. Another aspect that makes
+              reading as a hobby different from most other hobbies is that when
+              you read, you are expanding your vocabulary.
               <br />
               <br />Moreover, reading can never get boring. Considering the huge
               number of books out there, your chances of ever really ending up
@@ -107,27 +132,30 @@
               genres and authors for you to explore and find your favorites.
               <br />
               <br />
+              Reading, however, is different. You have to create your own visual
+              images as you read. This is a skill needed to enhance your ability
+              to envisage real-world situations and to find solutions for
+              complex problems.
             </p>
           </div>
         </div>
-        <div class="">
+        <div class="w-full m-[10px]">
           <img
-            class="w-[4000px]"
+            class="w-[full]"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/155/original/pexels-radu-florin-1577876.png?1689022094"
             alt=""
           />
         </div>
-        <div class="max-w-full flex text-end">
+        <div class="flex text-end">
           <p class="text-white font-mono">
             Reading is considered a good hobby because it leads to the all-round
             development of your brain and personality. Reading can be done by
-            anyone, at any age. It has a low barrier for entry as it is
-            inexpensive, reading also has substantial health benefits apart from
-            enabling recreation.
+            anyone, at any age. reading also has substantial health benefits
+            apart from enabling recreation.
             <br />
             <br />In an
             <a
-              class="text-yellow-400 font-bold hover:text-blue-600"
+              class="text-yellow-400 font-bold ease-in-out duration-300 hover:text-blue-600"
               href="https://news.emory.edu/stories/2013/12/esc_novels_change_brain/campus.html"
               target="_blank"
               >important study</a
@@ -138,7 +166,50 @@
             brain associated with language receptivity.
             <br />
             <br />
+            There are so many diverse subjects to read about that you can get
+            new ideas on virtually any topic. Even when you read fiction you get
+            other perspectives on many everyday matters. Without reading you
+            would most probably never have thought about some of the things you
+            are doing now or what you’ve put on your bucket list.
           </p>
+        </div>
+      </div>
+      <div
+        class="bg-yellow-400 p-6 flex md:flex-row flex-col"
+        id="hobbies-subscribe"
+      >
+        <div class="flex flex-row flex-1 items-center">
+          <img
+            class="shadow-xl w-[200px]"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/203/original/people.png?1689032968"
+            alt=""
+          />
+          <p class="text-black font-bold text-xs ml-[10px]">
+            more than 10.000 people are following this hobby.
+          </p>
+        </div>
+        <div
+          class="flex flex-col justify-center text-center items-center mr-[60px]"
+        >
+          <p class="text-black text-small font-bold">
+            You need just one click to be part of us.
+          </p>
+          <div>
+            <button
+              class="flex flex-row justify-center rounded-full bg-black text-white w-[150px] ease-in-out duration-300 hover:bg-blue-600 mt-[2px] p-2 font-medium shadow-lg"
+            >
+              SUBSCRIBE
+
+              <span class="relative flex h-3 w-3">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"
+                ></span>
+              </span>
+            </button>
+          </div>
         </div>
       </div>
       <div id="hobbies-footer"></div>
