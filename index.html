@@ -20,7 +20,7 @@
     -->
     <div class="bg-zinc-900" id="hobby_container">
       <div
-        class="bg-yellow-400 items-center flex flex-row p-2 max-w-[100%] justify-between"
+        class="bg-yellow-400 items-center flex flex-row p-2 px-2 max-w-[100%] justify-between"
         id="hobby_navbar"
       >
         <div
@@ -68,6 +68,7 @@
           >
         </div>
       </div>
+
       <div
         class="p-8 md:p-40 bg-cover bg-center bg-[url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/939/original/pexels-pixabay-159751.jpg?1688871755')]"
         id="hobbies-header"
@@ -81,13 +82,15 @@
             <i class="fa-solid fa-book-open-reader text-6xl md:text-8xl"></i
             >obby
           </a>
-          <p class="block text-center text-2xl text-yellow-300 font-bold">
+          <p
+            class="block text-center text-2xl text-white hover:text-yellow-400 font-bold cursor-pointer ease-in duration-300"
+          >
             One click to view more
           </p>
         </div>
       </div>
 
-      <div class="text-center mt-[2rem] flex flex-row justify-center">
+      <div class="bg-yellow-800 p-3 mt-[2rem] flex flex-row justify-center">
         <span class="relative flex h-3 w-3">
           <span
             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"
@@ -114,7 +117,7 @@
       </div>
 
       <div
-        class="grid md:max-[1100px]:grid-cols-1 grid-cols-3 p-10 items-center"
+        class="flex max-[1100px]:flex-col flex-row p-10 items-center"
         id="hobbies-content"
       >
         <div class="">
@@ -139,7 +142,7 @@
             </p>
           </div>
         </div>
-        <div class="w-full m-[10px]">
+        <div class="md:w-[6000px] w-full m-[10px] flex justify-center">
           <img
             class="w-[full]"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/155/original/pexels-radu-florin-1577876.png?1689022094"
@@ -174,27 +177,39 @@
           </p>
         </div>
       </div>
-      <div
-        class="bg-yellow-400 p-6 flex md:flex-row flex-col"
-        id="hobbies-subscribe"
-      >
-        <div class="flex flex-row flex-1 items-center">
-          <img
-            class="shadow-xl w-[200px]"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/203/original/people.png?1689032968"
-            alt=""
-          />
-          <p class="text-black font-bold text-xs ml-[10px]">
-            more than 10.000 people are following this hobby.
-          </p>
-        </div>
+
+      <div class="bg-yellow-400 p-6 block" id="hobbies-subscribe">
         <div
-          class="flex flex-col justify-center text-center items-center mr-[60px]"
+          class="flex flex-row justify-between md:mx-[300px] sm:mx-[100px] mx-[50px] text-4xl text-black p-4"
         >
-          <p class="text-black text-small font-bold">
+          <i
+            class="fa-brands shadow-md rounded-full cursor-pointer hover:text-blue-700 ease-in duration-300 fa-discord"
+          ></i>
+          <i
+            class="fa-brands shadow-md rounded-full cursor-pointer hover:text-blue-700 ease-in duration-300 fa-twitter"
+          ></i>
+          <i
+            class="fa-brands shadow-md rounded-full cursor-pointer hover:text-blue-700 ease-in duration-300 fa-github"
+          ></i>
+          <i
+            class="fa-brands shadow-md rounded-full cursor-pointer hover:text-blue-700 ease-in duration-300 fa-skype"
+          ></i>
+          <i
+            class="fa-brands shadow-md rounded-full cursor-pointer hover:text-blue-700 ease-in duration-300 fa-linkedin"
+          ></i>
+          <i
+            class="fa-brands shadow-md rounded-full cursor-pointer hover:text-blue-700 ease-in duration-300 fa-google"
+          ></i>
+          <i
+            class="fa-brands shadow-md rounded-full cursor-pointer hover:text-blue-700 ease-in duration-300 fa-youtube"
+          ></i>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <p class="text-black text-base font-bold">
             You need just one click to be part of us.
           </p>
-          <div>
+          <div class="mt-[10px]">
             <button
               class="flex flex-row justify-center rounded-full bg-black text-white w-[150px] ease-in-out duration-300 hover:bg-blue-600 mt-[2px] p-2 font-medium shadow-lg"
             >
@@ -209,6 +224,75 @@
                 ></span>
               </span>
             </button>
+          </div>
+        </div>
+
+        <div class="flex flex-row items-center justify-center mt-[20px]">
+          <img
+            class="shadow-xl w-[200px]"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/203/original/people.png?1689032968"
+            alt=""
+          />
+          <p class="text-black font-bold text-xs ml-[10px]">
+            more than 10.000 people are following this hobby.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-black-800 max-w-[100%] items-center" id="hobbie_books">
+        <div class="flex flex-row items-center">
+          <div class="flex flex-col text-white p-2">
+            <h2 class="text-2xl font-bold">These Tips Will Help You Choose the Next Book to Read</h2>
+            <br />
+            <p>
+              <i class="fa-solid fa-hand-point-right"></i>
+              Create a Personal Reading List
+            </p>
+            <p class="leading-4">
+              <i class="fa-solid fa-hand-point-right"></i>
+              Don’t Finish the Books You Don’t Feel Like Continuing
+            </p>
+            <p>
+              <i class="fa-solid fa-hand-point-right"></i>
+              Don’t Be Obsessed With the Number of Books You Have/Should Read
+            </p>
+            <p>
+              <i class="fa-solid fa-hand-point-right"></i>
+              Read Your Favorite Authors’ Works
+            </p>
+          </div>
+          <div class="max-w-[50%]">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/243/original/pexels-yaroslav-sh555uraev-6281049.png?1689047495"
+              alt="books"
+              class="w-full"
+            />
+          </div>
+        </div>
+
+        <div
+          class="text-white font-mono flex flex-row items-center max-w-[100%]"
+        >
+          <div class="">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/242/original/pexels-yaroslav-shuraev-6281049.png?1689047479"
+              alt="books"
+              class="w-full"
+            />
+          </div>
+          <div class="max-w-[50%] p-2">
+            <h2>Read a Book! It’s Good for Your Career</h2>
+            <p>
+              Empathy is considered one of the most important skills a human can
+              develop. In the business world, understanding other people’s
+              feelings and perspectives can lead to stronger relationships with
+              employees, culminating in a better work environment, higher
+              engagement and increased employee retention. As a business owner,
+              empathy can help you negotiate deals and build customer loyalty.
+              An empathetic personality will make people want to work with you
+              throughout your career. You may even want to consider a specific
+              type of career as an empath.
+            </p>
           </div>
         </div>
       </div>
