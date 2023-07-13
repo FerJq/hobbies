@@ -142,9 +142,9 @@
             </p>
           </div>
         </div>
-        <div class="md:w-[6000px] w-full m-[10px] flex justify-center">
+        <div class="m-[10px] flex justify-center">
           <img
-            class="w-[full]"
+            class="md:w-[6000px] w-full"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/155/original/pexels-radu-florin-1577876.png?1689022094"
             alt=""
           />
@@ -173,14 +173,21 @@
             new ideas on virtually any topic. Even when you read fiction you get
             other perspectives on many everyday matters. Without reading you
             would most probably never have thought about some of the things you
-            are doing now or what you’ve put on your bucket list.
-          </p>
+            are doing now or what you’ve put on your bu class="flex flex-col justify-between"cket list.
+
+<h3 class="font-sans"></h3>
+<ul clas text-decoration-none font-monos="flex flex-col text-base">
+  <li class="cursor-pointer"></li>
+  <li class="cursor-pointer"></li>
+  <li class="cursor-pointer"></li>
+  <li class="cursor-pointer"></li>
+</ul>          </p>
         </div>
       </div>
 
       <div class="bg-yellow-400 p-6 block" id="hobbies-subscribe">
         <div
-          class="flex flex-row justify-between md:mx-[300px] sm:mx-[100px] mx-[50px] text-4xl text-black p-4"
+          class="flex flex-row justify-center space-x-1 md:mx-[300px] sm:mx-[100px] mx-[50px] text-xl text-black p-4"
         >
           <i
             class="fa-brands shadow-md rounded-full cursor-pointer hover:text-blue-700 ease-in duration-300 fa-discord"
@@ -227,7 +234,9 @@
           </div>
         </div>
 
-        <div class="flex flex-row items-center justify-center mt-[20px]">
+        <div
+          class="flex md:flex-row flex-col items-center justify-center mt-[20px]"
+        >
           <img
             class="shadow-xl w-[200px]"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/203/original/people.png?1689032968"
@@ -253,8 +262,8 @@
             <br />
             <p class="font-bold bg-yellow-900 rounded-full p-1">
               <i class="fa-solid fa-hand-point-right ml-[10px] text-3xl"></i>
-              +Create a Personal Reading List
-            </p>
+              +Create a Personal Rea class="flex flex-col justify-between"ding List
+           </p>
             <br />
             <p class="font-bold bg-yellow-900 rounded-full p-1">
               <i class="fa-solid fa-hand-point-right ml-[10px] text-3xl"></i>
@@ -308,7 +317,38 @@
           </div>
         </div>
       </div>
-      <div id="hobbies-footer"></div>
+      <div class="p-2 bg-yellow-400 flex justify-center" id="tag">
+        <h1 class="md:text-4xl text-xl font-bold">N E V E R&nbsp;&nbsp; I S &nbsp;&nbsp;L A T E &nbsp;&nbsp;T O &nbsp;&nbsp;L E A R N</h1>
+      </div>
+      <div class="bg-yellow-900 text-white flex md:flex-row flex-col justify-between py-6 px-16" id="hobbies-footer">
+        <div class="flex flex-col" id="list">
+          <h3 class="font-sans text-xl">Language</h3>
+          <ul class="flex flex-col text-decoration-none font-mono text-base mt-[10px]">
+            <li class="cursor-pointer text-xs">English</li>
+            <li class="cursor-pointer text-xs">Chinese</li>
+            <li class="cursor-pointer text-xs">France</li>
+            <li class="cursor-pointer text-xs">Portuguese</li>
+          </ul>
+        </div>
+        <div class="flex flex-col" id="list">
+          <h3 class="font-sans text-xl">Contact</h3>
+          <ul class="flex flex-col text-decoration-none font-mono text-base mt-[10px]">
+            <li class="cursor-pointer">Support</li>
+            <li class="cursor-pointer">Comments</li>
+            <li class="cursor-pointer">Comunity</li>
+            <li class="cursor-pointer">Email us</li>
+          </ul>
+        </div>
+        <div class="flex flex-col" id="list">
+          <h3 class="font-sans text-xl">Work with us</h3>
+          <ul class="flex flex-col text-decoration-none font-mono text-base mt-[10px]">
+            <li class="cursor-pointer">Sponsors</li>
+            <li class="cursor-pointer">Donate</li>
+            <li class="cursor-pointer">Participate</li>
+            <li class="cursor-pointer">Courses</li>
+          </ul>
+        </div>
+      </div>
       <!--JS Library-->
       <script
         src="https://kit.fontawesome.com/12e117d926.js"
@@ -323,38 +363,134 @@
         const closed_menu = document.getElementById('closed');
 
         //Menu Toggle
-        open_menu.addEventListener('click', toggOpen);
-        function toggOpen() {
-          hobby_navbar.classList.remove('flex', 'flex-row');
-          hobby_navbar.classList.add('block');
+        open_menu.add class="flex flex-col justify-between"EventListen
+        <h3></h3>
+        <ul class="flex flex class="font-sans"-col">
+         text-decoration-none font-mono  <li></li>
+          <li></li> cl text-baseass="cursor-pointer"
+          <li class="cursor-pointer"></li>
+          <li></li></ul>er('c class="cursor-pointer"lick', toggOpen);
+        function toggOp class="cursor-pointer"en() {
+          hobby_navbar. class="flex flex-col justify-between"classList.r
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+         text-decoration-none font-mono    <li></li>
+            <li></li> class text-base="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>emove class="cursor-pointer"('flex', 'flex-row');
+          hobby_navbar. class="flex flex-col ju class="cursor-pointer"stify-between"classList.a
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+         text-decoration-no text-basene font-mono    <li></li>
+            <li></li> class="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>dd('b class="cursor-pointer"lo class="cursor-pointer"ck');
 
-          open_menu.classList.add('hidden');
+          open_menu. class="flex flex-col justify-between"classList.a
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+      text-decoration-none  text-basefont-mono       <li></li>
+            <li></li> class="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>dd('h class="cursor-pointer"idd class="cursor-pointer"en');
 
-          closed_menu.classList.remove('hidden');
-          closed_menu.classList.add('flex');
+          closed_menu. class="flex flex-col justify-between"classList.r
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+        text-decoration-none font-mono     <li></li>
+            <li></li> class text-base="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>emove class="cursor-pointer"('hidden');
+          closed_menu. class="flex flex-col jus class="cursor-pointer"tify-between"classList.a
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+        text-decoration-non text-basee font-mono     <li></li>
+            <li></li> class="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>dd('f class="cursor-pointer"l class="cursor-pointer"ex');
 
-          hobby_menu_options.classList.add(
-            'flex',
+          hobby_menu_op class="flex flex-col justify-between"tions.classList.a
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+         text-decoration-none font-mono    <li></li>
+          text-base  <li></li> class="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ class="cursor-pointer"ul>dd(
+            ' class="cursor-pointer"flex',
             'flex-col',
             'text-end',
             'mt-[10px]'
           );
-          hobby_menu_options.classList.remove('hidden');
-        }
+          hobby_menu_op class="flex flex-col justify-between"tions.classList.r
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+         text-decoration-none font-mono    <li></li> text-base
+           <li></li> class="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>emove class="cursor-pointer"('hidden');
+    class="cursor-pointer"     }
 
-        closed_menu.addEventListener('click', toggClose);
-        function toggClose() {
-          hobby_navbar.classList.add('flex', 'flex-row');
-          hobby_navbar.classList.remove('block');
+        closed_menu.a class="flex flex-col justify-between"ddEventListen
+        <h3></h3>
+        <ul class="flex flex class="font-sans"-col">
+         text-decoration-none font-mono  <li></li>
+          <li></li> cla text-basess="cursor-pointer"
+          <li class="cursor-pointer"></li>
+          <li></li></ul>er('c class="cursor-pointer"lick', toggClose);
+        function toggClo class="cursor-pointer"se() {
+          hobby_navbar. class="flex flex-col justify-between"classList.a
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+         text-decoration-none font-mono    <li></li>
+            <li></li> class text-base="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>dd('f class="cursor-pointer"lex', 'flex-row');
+          hobby_navbar. class="flex flex-col ju class="cursor-pointer"stify-between"classList.r
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+         text-decoration-no text-basene font-mono    <li></li>
+            <li></li> class="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>emove class="cursor-pointer"('blo class="cursor-pointer"ck');
 
-          open_menu.classList.remove('hidden');
+          open_menu. class="flex flex-col justify-between"classList.r
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+      text-decoration-none  text-basefont-mono       <li></li>
+            <li></li> class="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>emove class="cursor-pointer"('hidd class="cursor-pointer"en');
 
-          closed_menu.classList.add('hidden');
-          closed_menu.classList.remove('flex');
+          closed_menu. class="flex flex-col justify-between"classList.a
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+        text-decoration-none font-mono     <li></li>
+            <li></li> class text-base="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>dd('h class="cursor-pointer"idden');
+          closed_menu. class="flex flex-col jus class="cursor-pointer"tify-between"classList.r
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+        text-decoration-non text-basee font-mono     <li></li>
+            <li></li> class="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>emove class="cursor-pointer"('fl class="cursor-pointer"ex');
 
-          hobby_menu_options.classList.remove('flex', 'flex-col', 'mt-[10px]');
-          hobby_menu_options.classList.add('hidden');
-        }
+          hobby_menu_op class="flex flex-col justify-between"tions.classList.r
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+         text-decoration-none font-mono    <li></li>
+            <li></li> class text-base="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>emove class="cursor-pointer"('flex', 'flex-col', 'mt-[10px]');
+          hobby_menu_op class="flex flex-col ju class="cursor-pointer"stify-between"tions.classList.a
+          <h3></h3>
+          <ul class="flex flex class="font-sans"-col">
+         text-decoration-none font-mono    <li></li> text-base
+           <li></li> class="cursor-pointer"
+            <li class="cursor-pointer"></li>
+            <li></li></ul>dd('h class="cursor-pointer"idden');
+    class="cursor-pointer"     }
       </script>
     </div>
   </body>
